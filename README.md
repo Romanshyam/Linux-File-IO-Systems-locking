@@ -1,3 +1,4 @@
+
 # Linux-File-IO-Systems-locking
 Ex07-Linux File-IO Systems-locking
 # AIM:
@@ -20,8 +21,11 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## 1.To Write a C program that illustrates files copying 
-```c
-include <sys/stat.h>
+
+
+```
+#include <unistd.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
 int main()
@@ -39,10 +43,8 @@ exit(0);}
 
 
 
-
-
 ## 2.To Write a C program that illustrates files locking
-```c
+```
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
@@ -79,19 +81,16 @@ printf("unlocking");
 getchar();
 close (fd);
 return 0;
-}    
-
+}
 ```
 
 
 
 ## OUTPUT
-## 1.To Write a C program that illustrates files copying 
 
-![alt text](image.png)
+![Screenshot 2024-10-16 181817](https://github.com/user-attachments/assets/8cbe9b31-0860-4ead-a856-d6c9523bf0a2)
+![Screenshot 2024-10-16 192545](https://github.com/user-attachments/assets/42bbe9b0-5f1b-45d6-bb65-451bc373d957)
 
-## 2.To Write a C program that illustrates files locking
-![alt text](image-1.png)
 
 
 
